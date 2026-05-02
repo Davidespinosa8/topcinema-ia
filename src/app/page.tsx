@@ -17,17 +17,17 @@ export default function Home() {
   )}`;
 
   return (
-    <main className="min-h-screen overflow-hidden px-5 sm:px-6 md:px-10 lg:px-16">
+    <main className="relative min-h-screen overflow-hidden px-5 sm:px-6 md:px-10 lg:px-16">
       
       {/* BACKGROUND DECORATION */}
-      <div className="fixed inset-0 -z-10 overflow-hidden">
+      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <div className="absolute top-[-10%] left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-[#FF2D2D]/20 blur-[120px]" />
         <div className="absolute bottom-[10%] right-[-10%] h-[350px] w-[350px] rounded-full bg-[#FF2D2D]/10 blur-[120px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,45,45,0.12),transparent_35%)]" />
       </div>
 
       {/* NAVBAR */}
-      <header className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between py-5 backdrop-blur-md">
+      <header className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between py-5 backdrop-blur-md relative">
         <a href="#" className="flex items-center gap-3 font-semibold tracking-wide">
           <div className="relative h-9 w-9">
             <Image
