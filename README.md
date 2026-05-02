@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Top Cinema — Landing Page
 
-## Getting Started
+Landing page desarrollada para la preventa de un curso de creación de contenido cinematográfico utilizando inteligencia artificial.
 
-First, run the development server:
+## 🚀 Objetivo
+
+Diseñar una landing moderna, clara y orientada a conversión que:
+
+- Explique el cambio de paradigma (IA + edición)
+- Posicione el curso como un sistema real, no teoría
+- Genere leads mediante WhatsApp
+- Transmita estética premium y profesional
+
+---
+
+## 🧠 Enfoque estratégico
+
+La landing está estructurada siguiendo un flujo de conversión:
+
+1. **Hero** → impacto + propuesta clara  
+2. **Problema** → identificación del usuario  
+3. **Oportunidad** → cambio de paradigma (IA)  
+4. **Solución** → sistema estructurado  
+5. **Beneficios** → resultados concretos  
+6. **Módulos** → contenido organizado  
+7. **Autoridad** → validación del creador  
+8. **Bonos** → aumento de valor percibido  
+9. **CTA final** → acción directa (WhatsApp + formulario)
+
+---
+
+## 🎨 Diseño y UI
+
+- Estilo: **cinematográfico / dark mode**
+- Paleta:
+  - Fondo: `#0B0B0B`
+  - Primario: `#FF2D2D`
+  - Secundario: `#FFFFFF`
+- Componentes:
+  - Bordes redondeados (`rounded-2xl`)
+  - Glow rojo sutil
+  - Gradientes oscuros
+  - Tipografía: **Inter**
+
+---
+
+## 🛠️ Stack tecnológico
+
+- **Next.js (App Router)**
+- **React**
+- **Tailwind CSS**
+- **Framer Motion** (animaciones)
+- **Lucide Icons**
+- **next/image** (optimización de imágenes)
+
+---
+
+## 📦 Componentes reutilizables
+
+- `SectionTitle` → títulos de sección
+- `FeatureCard` → cards de contenido
+- `FadeIn` → animaciones suaves
+- `LeadForm` → formulario conectado a WhatsApp
+
+---
+
+## 📽️ Multimedia
+
+- Video de YouTube embebido en el Hero
+- Imagen real del creador (`Elias.png`)
+- Logo (`Topcinema.svg`)
+
+---
+
+## 📲 Captación de leads
+
+Se utilizan dos caminos:
+
+### 1. WhatsApp directo
+Botones CTA que abren conversación con mensaje pre-armado.
+
+### 2. Formulario
+El usuario completa datos y se redirige a WhatsApp con información estructurada.
+
+👉 Esto evita backend y simplifica la validación en preventa.
+
+---
+
+## ⚙️ Instalación
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
