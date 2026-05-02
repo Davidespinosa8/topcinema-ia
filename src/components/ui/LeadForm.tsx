@@ -12,11 +12,11 @@ export function LeadForm() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const message = `Hola Top Cinema, quiero información sobre la preventa del curso.
+    const message = `Hola Elias, quiero información sobre la preventa del curso.
 
-Nombre: ${name}
-Contacto: ${contact}
-Quiero mejorar: ${interest || "No especificado"}`;
+      Nombre: ${name}
+      Contacto: ${contact}
+      Quiero mejorar: ${interest || "No especificado"}`;
 
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message
@@ -40,7 +40,7 @@ Quiero mejorar: ${interest || "No especificado"}`;
           value={name}
           onChange={(event) => setName(event.target.value)}
           placeholder="Tu nombre"
-          className="w-full rounded-xl border border-neutral-800 bg-[#0B0B0B] px-4 py-3 text-white outline-none transition placeholder:text-neutral-600 focus:border-[#FF2D2D]"
+          className="w-full rounded-xl border border-neutral-800 bg-[#0B0B0B] px-4 py-3 text-white outline-none transition placeholder:text-neutral-600 focus:border-[#38BDF8]"
         />
       </div>
 
@@ -54,7 +54,7 @@ Quiero mejorar: ${interest || "No especificado"}`;
           value={contact}
           onChange={(event) => setContact(event.target.value)}
           placeholder="tu@email.com o WhatsApp"
-          className="w-full rounded-xl border border-neutral-800 bg-[#0B0B0B] px-4 py-3 text-white outline-none transition placeholder:text-neutral-600 focus:border-[#FF2D2D]"
+          className="w-full rounded-xl border border-neutral-800 bg-[#0B0B0B] px-4 py-3 text-white outline-none transition placeholder:text-neutral-600 focus:border-[#38BDF8]"
         />
       </div>
 
@@ -67,13 +67,13 @@ Quiero mejorar: ${interest || "No especificado"}`;
           value={interest}
           onChange={(event) => setInterest(event.target.value)}
           placeholder="Ej: quiero crear videos más profesionales para redes..."
-          className="w-full resize-none rounded-xl border border-neutral-800 bg-[#0B0B0B] px-4 py-3 text-white outline-none transition placeholder:text-neutral-600 focus:border-[#FF2D2D]"
+          className="w-full resize-none rounded-xl border border-neutral-800 bg-[#0B0B0B] px-4 py-3 text-white outline-none transition placeholder:text-neutral-600 focus:border-[#38BDF8]"
         />
       </div>
 
       <button
         type="submit"
-        className="rounded-xl bg-[#FF2D2D] px-6 py-4 font-semibold text-white shadow-lg shadow-red-500/20 transition hover:opacity-90"
+        className="rounded-xl bg-[#38BDF8] px-6 py-4 font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:opacity-90"
       >
         Enviar por WhatsApp
       </button>

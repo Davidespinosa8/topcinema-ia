@@ -12,7 +12,7 @@ export function SectionTitle({
   return (
     <div className="mx-auto mb-16 max-w-3xl text-center">
       {eyebrow && (
-        <span className="mb-4 inline-block rounded-full border border-[#FF2D2D]/30 bg-[#FF2D2D]/10 px-4 py-1 text-sm font-semibold text-[#FFB3B3]">
+        <span className="mb-4 inline-block rounded-full border border-[#38BDF8]/30 bg-[#38BDF8]/10 px-4 py-1 text-sm font-semibold text-[#4bb5e2]">
           {eyebrow}
         </span>
       )}

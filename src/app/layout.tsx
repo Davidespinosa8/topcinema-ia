@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Top Cinema",
+  title: "EliasPro AI",
   description: "Domina la creación de contenido cinematográfico con inteligencia artificial",
 };
 

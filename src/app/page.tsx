@@ -5,13 +5,18 @@ import { FeatureCard } from "@/components/ui/FeatureCard";
 import { LeadForm } from "@/components/ui/LeadForm";
 import Image from "next/image";
 import eliasImg from "@/public/Elias.png";
-import logo from "@/public/Topcinema.svg"
+import logo from "@/public/Elias1.png";
+import eliasCt from "@/public/eliasct.jpg";
+import eliasCine from "@/public/eliascine.jpg";
+import eliasMario from "@/public/eliascinemario.png";
+import eliasYoshi from "@/public/eliascineyoshi.png";
+import eliasMdg from "@/public/eliasmdg.png";
 
 export default function Home() {
   
   const whatsappNumber = "5491164953107";
   const whatsappText =
-    "Hola Elias Top Cinema, quiero información sobre la preventa del curso de videos cinematográficos con IA.";
+    "Hola Eliaspro IA, quiero información sobre la preventa del curso de videos cinematográficos con IA.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappText
   )}`;
@@ -21,24 +26,24 @@ export default function Home() {
       
       {/* BACKGROUND DECORATION */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-        <div className="absolute top-[-10%] left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-[#FF2D2D]/20 blur-[120px]" />
-        <div className="absolute bottom-[10%] right-[-10%] h-[350px] w-[350px] rounded-full bg-[#FF2D2D]/10 blur-[120px]" />
+        <div className="absolute top-[-10%] left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-[#38BDF8]/20 blur-[120px]" />
+        <div className="absolute bottom-[10%] right-[-10%] h-[350px] w-[350px] rounded-full bg-[#38BDF8]/10 blur-[120px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,45,45,0.12),transparent_35%)]" />
       </div>
 
       {/* NAVBAR */}
-      <header className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between py-5 backdrop-blur-md relative">
+      <header className="sticky top-0 z-50 mx-auto flex max-w-7xl items-center justify-between py-5 backdrop-blur-md">
         <a href="#" className="flex items-center gap-3 font-semibold tracking-wide">
           <div className="relative h-9 w-9">
             <Image
               src={logo}
-              alt="Top Cinema"
+              alt="Eliaspro IA"
               fill
               className="object-contain"
               priority
             />
           </div>
-          <span className="text-white">Top Cinema</span>
+          <span className="text-white">Eliaspro IA</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-sm text-neutral-400 md:flex">
@@ -65,14 +70,14 @@ export default function Home() {
       <FadeIn>
       <section className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden py-24 text-center">
 
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#FF2D2D]/30 bg-[#FF2D2D]/10 px-4 py-2 text-sm text-[#FFB3B3] backdrop-blur">
-          <span className="h-2 w-2 rounded-full bg-[#FF2D2D]" />
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#38BDF8]/30 bg-[#38BDF8]/10 px-4 py-2 text-sm text-[#BAE6FD] backdrop-blur">
+          <span className="h-2 w-2 rounded-full bg-[#38BDF8]" />
           Preventa abierta para creadores visuales
         </div>
 
         <h1 className="max-w-5xl text-4xl font-black leading-tight tracking-tight md:text-6xl lg:text-7xl">
           Creá videos con estética cinematográfica usando{" "}
-          <span className="bg-gradient-to-r from-white via-[#FF6B6B] to-[#FF2D2D] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-white via-[#7DD3FC] to-[#38BDF8] bg-clip-text text-transparent">
             inteligencia artificial
           </span>
         </h1>
@@ -85,7 +90,7 @@ export default function Home() {
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <a
             href={whatsappUrl}
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FF2D2D] px-7 py-4 font-semibold text-white shadow-lg shadow-red-500/25 transition hover:scale-[1.02] hover:opacity-90"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#38BDF8] px-7 py-4 font-semibold text-white shadow-lg shadow-sky-500/25 transition hover:scale-[1.02] hover:opacity-90"
           >
             <PlayCircle size={20} />
             Quiero entrar a la preventa
@@ -109,7 +114,7 @@ export default function Home() {
           <span>Estética premium</span>
         </div>
 
-        <div className="relative mt-14 w-full max-w-5xl overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-red-500/10">
+        <div className="relative mt-14 w-full max-w-5xl overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
         <div className="aspect-video">
           <iframe
             className="w-full h-full"
@@ -186,7 +191,7 @@ export default function Home() {
               </span>
             </p>
 
-            <p className="text-[#FF2D2D] font-semibold">
+            <p className="text-[#38BDF8] font-semibold">
               El resultado: contenido que parece de otro nivel,
               sin multiplicar las horas de trabajo.
             </p>
@@ -234,34 +239,162 @@ export default function Home() {
 
           <SectionTitle
             eyebrow="Resultados"
-            title="Lo que vas a poder hacer después de aplicar esto"
-            description="No es solo aprender herramientas. Es cambiar la forma en la que producís contenido."
+            title="Convertí videos simples de IA en piezas audiovisuales de alto impacto"
+            description="Lo que antes se veía como un simple video generado con IA, vas a poder trabajarlo como una producción audiovisual con intención, ritmo, sonido y look profesional."
           />
 
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <FeatureCard
-              title="Producir más en menos tiempo"
-              description="Reducí horas de edición usando IA en las partes que no aportan valor."
+              title="Mejorar la calidad visual"
+              description="Transformá ideas simples en piezas con mejor composición, atmósfera, iluminación y estética cinematográfica."
             />
 
             <FeatureCard
-              title="Mejorar tu calidad visual"
-              description="Lográ un estilo más cinematográfico sin depender de equipos caros."
+              title="Crear con más intención"
+              description="Dejá de generar al azar. Aprendé a dirigir la IA con criterios visuales concretos: planos, ángulos, lentes, estilo y ritmo."
             />
 
             <FeatureCard
-              title="Diferenciarte del resto"
-              description="Dejá de hacer contenido genérico y empezá a construir identidad visual."
+              title="Ahorrar créditos y tiempo"
+              description="Evitá pruebas innecesarias entendiendo cómo pedir, ajustar, iterar y corregir resultados sin desperdiciar tantos intentos."
             />
 
             <FeatureCard
-              title="Tomar decisiones creativas mejores"
-              description="No solo editar, sino dirigir el resultado final con intención."
+              title="Elevar el resultado final"
+              description="Sumá edición, música, efectos de sonido, color y timing para que el video no parezca crudo, sino una pieza audiovisual terminada."
             />
+          </div>
+        </div>
+
+      </section>
+
+      {/* EJEMPLOS REALES */}
+      <section className="py-24 max-w-6xl mx-auto">
+
+        <SectionTitle
+          eyebrow="Ejemplos reales"
+          title="De una idea simple a una pieza audiovisual"
+          description="Cada proyecto combina imágenes generadas con IA, criterio cinematográfico, edición, sonido y ritmo."
+        />
+
+        <div className="space-y-12">
+
+          {/* PROYECTO MARIO */}
+          <div className="rounded-3xl border border-neutral-800 bg-[#111]/80 p-5 md:p-8">
+
+            <div className="mb-6">
+              <span className="text-sm font-semibold text-[#38BDF8]">
+                Proyecto 01
+              </span>
+              <h3 className="mt-2 text-2xl font-bold">
+                Universo cinematográfico estilo Mario
+              </h3>
+              <p className="mt-3 max-w-3xl text-neutral-400">
+                Exploración visual con personajes, atmósfera y consistencia estética aplicada a un video de IA.
+              </p>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] items-start">
+
+              {/* VIDEO VERTICAL */}
+              <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-2xl border border-neutral-800 bg-black">
+                <div className="aspect-[9/16]">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.instagram.com/reel/DWuCSXGjtal/embed"
+                    title="Proyecto Mario - Eliaspro IA"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* IMÁGENES RELACIONADAS */}
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
+                  <Image
+                    src={eliasCine}
+                    alt="Imagen cinematográfica del proyecto Mario"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
+                  <Image
+                    src={eliasMario}
+                    alt="Mario generado con estética cinematográfica"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800 sm:col-span">
+                  <Image
+                    src={eliasYoshi}
+                    alt="Yoshi generado con estética cinematográfica"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* PROYECTO MÁQUINA DE GUERRA */}
+          <div className="rounded-3xl border border-neutral-800 bg-[#111]/80 p-5 md:p-8">
+
+            <div className="mb-6">
+              <span className="text-sm font-semibold text-[#38BDF8]">
+                Proyecto 02
+              </span>
+              <h3 className="mt-2 text-2xl font-bold">
+                Máquina de guerra: IA con look realista
+              </h3>
+              <p className="mt-3 max-w-3xl text-neutral-400">
+                Un ejemplo de cómo trabajar una imagen con intención visual, impacto, atmósfera y edición final.
+              </p>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] items-start">
+
+              {/* VIDEO VERTICAL */}
+              <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-2xl border border-neutral-800 bg-black">
+                <div className="aspect-[9/16]">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.instagram.com/reel/DV4azvrDm-T/embed"
+                    title="Proyecto Máquina de Guerra - Eliaspro IA"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* IMAGEN RELACIONADA */}
+              <div className="grid gap-3">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
+                  <Image
+                    src={eliasMdg}
+                    alt="Máquina de guerra generada con IA"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
+                  <Image
+                    src={eliasCt}
+                    alt="Elias creador de contenido"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
-
       </section>
 
       {/* MÓDULOS */}
@@ -269,58 +402,57 @@ export default function Home() {
       <section id="modulos" className="py-24 max-w-6xl mx-auto">
 
         <SectionTitle
-          eyebrow="Contenido del curso"
-          title="Qué vas a aprender dentro del curso"
-          description="Una ruta paso a paso para pasar de la idea al video final, combinando criterio creativo, IA y edición."
+          eyebrow="Estructura del curso"
+          title="De la idea al video final"
+          description="Un recorrido práctico para pensar, generar, editar y terminar videos con estética cinematográfica usando IA y criterio audiovisual real."
         />
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           <FeatureCard
             eyebrow="Módulo 01"
-            title="Fundamentos del contenido cinematográfico"
-            description="Entendé qué hace que un video se perciba más profesional: encuadre, ritmo, atmósfera, intención visual y narrativa."
+            title="Idea: la base que nadie enseña"
+            description="Cómo pensar un video cinematográfico o realista, estructurar contenido, evitar lo genérico, reconocer errores típicos de IA y construir una idea real ejecutable."
           />
 
           <FeatureCard
             eyebrow="Módulo 02"
-            title="Prompts visuales para IA"
-            description="Aprendé a escribir instrucciones claras para generar imágenes, escenas y recursos visuales con una estética consistente."
+            title="IA + lenguaje cinematográfico"
+            description="Prompts, lógica básica, planos, ángulos, lentes, iluminación, generación de imágenes y video realista, consistencia de estilo y personajes."
           />
 
           <FeatureCard
             eyebrow="Módulo 03"
-            title="Generación de clips y recursos"
-            description="Cómo crear materiales base con IA para construir escenas, transiciones, fondos, planos de apoyo y piezas visuales."
+            title="Look cinematográfico / realista"
+            description="Edición básica, ritmo, color, música, efectos de sonido, timing, silencios, cortes y análisis del antes y después con y sin sonido."
           />
 
           <FeatureCard
-            eyebrow="Módulo 04"
-            title="Edición real y composición final"
-            description="Integrá los recursos generados con IA dentro de una edición sólida: ritmo, cortes, sonido, color y narrativa."
-          />
-
-          <FeatureCard
-            eyebrow="Módulo 05"
-            title="Workflow completo de producción"
-            description="Armá un proceso repetible para crear piezas con estética premium, desde la idea inicial hasta la exportación final."
+            eyebrow="Resultado final"
+            title="Armado de video completo"
+            description="Aplicás todo el proceso para transformar una idea en una pieza audiovisual terminada, con estética profesional y criterio cinematográfico."
             className="md:col-span-2"
           />
-        </div>
 
+          <FeatureCard
+            eyebrow="Extra"
+            title="Ahorro de créditos y hacks"
+            description="Recursos prácticos para evitar intentos innecesarios, mejorar resultados y aprovechar mejor las herramientas de IA durante el proceso."
+          />
+        </div>
       </section>
       </FadeIn>
+
       {/* AUTORIDAD */}
       <section className="py-24 bg-[#111]">
-
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
           {/* Imagen */}
-          <div className="relative w-full h-[550px] rounded-2xl overflow-hidden border border-neutral-800">
+          <div className="relative w-full h-[550px] rounded-2xl overflow-hidden ">
             <Image
               src={eliasImg}
               alt="Elias - Top Cinema"
               fill
-              className="object-cover"
+              className="object-contain p-2"
               priority
             />
           </div>
@@ -412,11 +544,11 @@ export default function Home() {
 
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#1A1A1A] to-[#0B0B0B] border border-neutral-800 rounded-2xl p-8 md:p-12 shadow-lg relative overflow-hidden">
 
-          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-72 h-72 bg-[#FF2D2D]/20 rounded-full blur-3xl" />
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-72 h-72 bg-[#38BDF8]/20 rounded-full blur-3xl" />
 
           <div className="relative z-10">
 
-            <span className="inline-block mb-4 px-4 py-1 rounded-full bg-[#FF2D2D]/10 border border-[#FF2D2D]/30 text-[#FF2D2D] text-sm font-semibold">
+            <span className="inline-block mb-4 px-4 py-1 rounded-full bg-[#38BDF8]/10 border border-[#38BDF8]/30 text-[#38BDF8] text-sm font-semibold">
               Preventa abierta
             </span>
 
@@ -435,7 +567,7 @@ export default function Home() {
                 href="https://wa.me/549XXXXXXXXXX?text=Hola%20Top%20Cinema%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20preventa%20del%20curso"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-7 py-4 bg-[#FF2D2D] rounded-xl font-semibold hover:opacity-90 transition shadow-lg shadow-red-500/20"
+                className="px-7 py-4 bg-[#38BDF8] rounded-xl font-semibold hover:opacity-90 transition shadow-lg shadow-sky-500/20"
               >
                 Quiero entrar a la preventa
               </a>

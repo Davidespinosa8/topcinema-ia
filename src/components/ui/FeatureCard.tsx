@@ -13,10 +13,10 @@ export function FeatureCard({
 }: FeatureCardProps) {
   return (
     <div
-      className={`rounded-2xl border border-neutral-800 bg-[#111] p-6 shadow-lg transition hover:-translate-y-1 hover:border-[#FF2D2D]/40 hover:shadow-red-500/10 ${className}`}
+      className={`rounded-2xl border border-neutral-800 bg-[#111] p-6 shadow-lg transition hover:-translate-y-1 hover:border-[#38BDF8]/40 hover:shadow-sky-500/10 ${className}`}
     >
       {eyebrow && (
-        <span className="mb-3 inline-block text-sm font-semibold text-[#FF2D2D]">
+        <span className="mb-3 inline-block text-sm font-semibold text-[#38BDF8]">
           {eyebrow}
         </span>
       )}
