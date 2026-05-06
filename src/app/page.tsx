@@ -11,6 +11,7 @@ import eliasCine from "@/public/eliascine.jpg";
 import eliasMario from "@/public/eliascinemario.png";
 import eliasYoshi from "@/public/eliascineyoshi.png";
 import eliasMdg from "@/public/eliasmdg.png";
+import { ImageCarousel } from "@/components/ui/ImageCarousel";
 
 export default function Home() {
   
@@ -294,10 +295,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] items-start">
+            <div className="flex flex-col items-center gap-8">
 
               {/* VIDEO VERTICAL */}
-              <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-2xl border border-neutral-800 bg-black">
+              <div className="w-full max-w-[360px] overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
                 <div className="aspect-[9/16]">
                   <iframe
                     className="h-full w-full"
@@ -309,34 +310,22 @@ export default function Home() {
               </div>
 
               {/* IMÁGENES RELACIONADAS */}
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
-                  <Image
-                    src={eliasCine}
-                    alt="Imagen cinematográfica del proyecto Mario"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
-                  <Image
-                    src={eliasMario}
-                    alt="Mario generado con estética cinematográfica"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800 sm:col-span">
-                  <Image
-                    src={eliasYoshi}
-                    alt="Yoshi generado con estética cinematográfica"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-              </div>
+              <ImageCarousel
+                images={[
+                  {
+                    src: eliasCine,
+                    alt: "Imagen cinematográfica del proyecto Mario",
+                  },
+                  {
+                    src: eliasMario,
+                    alt: "Mario generado con estética cinematográfica",
+                  },
+                  {
+                    src: eliasYoshi,
+                    alt: "Yoshi generado con estética cinematográfica",
+                  },
+                ]}
+              />
 
             </div>
           </div>
@@ -356,10 +345,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] items-start">
+            <div className="flex flex-col items-center gap-8">
 
               {/* VIDEO VERTICAL */}
-              <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-2xl border border-neutral-800 bg-black">
+              <div className="w-full max-w-[360px] overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
                 <div className="aspect-[9/16]">
                   <iframe
                     className="h-full w-full"
@@ -371,25 +360,18 @@ export default function Home() {
               </div>
 
               {/* IMAGEN RELACIONADA */}
-              <div className="grid gap-3">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
-                  <Image
-                    src={eliasMdg}
-                    alt="Máquina de guerra generada con IA"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-neutral-800">
-                  <Image
-                    src={eliasCt}
-                    alt="Elias creador de contenido"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-              </div>
+              <ImageCarousel
+                images={[
+                  {
+                    src: eliasMdg,
+                    alt: "Máquina de guerra generada con IA",
+                  },
+                  {
+                    src: eliasCt,
+                    alt: "Elias creador de contenido",
+                  },
+                ]}
+              />
 
             </div>
           </div>
@@ -447,7 +429,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
           {/* Imagen */}
-          <div className="relative w-full h-[550px] rounded-2xl overflow-hidden ">
+          <div className="relative w-full h-[550px] rounded-2xl overflow-hidden">
             <Image
               src={eliasImg}
               alt="Elias - Top Cinema"
