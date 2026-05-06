@@ -1,6 +1,6 @@
-# 🎬 Top Cinema — Landing Page
+# 🎬 Eliaspro IA — Landing Page
 
-Landing page desarrollada para la preventa de un curso de creación de contenido cinematográfico utilizando inteligencia artificial.
+Landing page desarrollada para la preventa de un curso de creación de videos cinematográficos utilizando inteligencia artificial, lenguaje audiovisual y edición real.
 
 ## 🚀 Objetivo
 
@@ -29,16 +29,35 @@ La landing está estructurada siguiendo un flujo de conversión:
 
 ---
 
+## 🎞️ Contenido del curso
+
+El curso está dividido en tres pilares principales:
+
+### 🧠 IDEA
+Cómo construir una idea ejecutable, evitar resultados genéricos y pensar contenido con lógica cinematográfica.
+
+### 🎥 IA + LENGUAJE CINEMATOGRÁFICO
+Uso de prompts, planos, lentes, iluminación, consistencia visual y generación de video realista.
+
+### 🎬 LOOK CINEMATOGRÁFICO
+Edición, color, ritmo, música, sonido y construcción audiovisual final.
+
+---
+
+Resultado esperado:
+
+> Transformar videos simples generados con IA en piezas audiovisuales de alto impacto con estética profesional.
+
 ## 🎨 Diseño y UI
 
 - Estilo: **cinematográfico / dark mode**
 - Paleta:
   - Fondo: `#0B0B0B`
-  - Primario: `#FF2D2D`
+  - Primario: `#38BDF8`
   - Secundario: `#FFFFFF`
 - Componentes:
   - Bordes redondeados (`rounded-2xl`)
-  - Glow rojo sutil
+  - Glow azul cinematográfico sutil
   - Gradientes oscuros
   - Tipografía: **Inter**
 
@@ -68,7 +87,7 @@ La landing está estructurada siguiendo un flujo de conversión:
 
 - Video de YouTube embebido en el Hero
 - Imagen real del creador (`Elias.png`)
-- Logo (`Topcinema.svg`)
+- Logo (`Elias1.png`)
 
 ---
 
@@ -91,3 +110,17 @@ El usuario completa datos y se redirige a WhatsApp con información estructurada
 ```bash
 npm install
 npm run dev
+
+## 🌐 Deploy
+
+Proyecto preparado para deploy en:
+
+- Vercel
+- Netlify
+- VPS Node.js
+
+---
+
+## 👨‍💻 Autor
+
+Desarrollado por David Espinosa.
