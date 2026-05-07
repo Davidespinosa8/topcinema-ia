@@ -201,6 +201,118 @@ export default function Home() {
 
       </section>
 
+      {/* EJEMPLOS REALES */}
+      <section className="py-24 max-w-6xl mx-auto">
+
+        <SectionTitle
+          eyebrow="Ejemplos reales"
+          title="De una idea simple a una pieza audiovisual"
+          description="Cada proyecto combina imágenes generadas con IA, criterio cinematográfico, edición, sonido y ritmo."
+        />
+
+        <div className="space-y-12">
+
+          {/* PROYECTO MARIO */}
+          <div className="rounded-3xl border border-neutral-800 bg-[#111]/80 p-5 md:p-8">
+
+            <div className="mb-6">
+              <span className="text-sm font-semibold text-[#38BDF8]">
+                Proyecto 01
+              </span>
+              <h3 className="mt-2 text-2xl font-bold">
+                Universo cinematográfico estilo Mario
+              </h3>
+              <p className="mt-3 max-w-3xl text-neutral-400">
+                Exploración visual con personajes, atmósfera y consistencia estética aplicada a un video de IA.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-8">
+
+              {/* VIDEO VERTICAL */}
+              <div className="w-full max-w-[360px] overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
+                <div className="aspect-[9/16]">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.youtube.com/embed/G8CzCh1wvpw"
+                    title="Proyecto Mario Galaxy - Eliaspro IA"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* IMÁGENES RELACIONADAS */}
+              <ImageCarousel
+                images={[
+                  {
+                    src: eliasCine,
+                    alt: "Imagen cinematográfica del proyecto Mario",
+                  },
+                  {
+                    src: eliasMario,
+                    alt: "Mario generado con estética cinematográfica",
+                  },
+                  {
+                    src: eliasYoshi,
+                    alt: "Yoshi generado con estética cinematográfica",
+                  },
+                ]}
+              />
+
+            </div>
+          </div>
+
+          {/* PROYECTO MÁQUINA DE GUERRA */}
+          <div className="rounded-3xl border border-neutral-800 bg-[#111]/80 p-5 md:p-8">
+
+            <div className="mb-6">
+              <span className="text-sm font-semibold text-[#38BDF8]">
+                Proyecto 02
+              </span>
+              <h3 className="mt-2 text-2xl font-bold">
+                Máquina de guerra: IA con look realista
+              </h3>
+              <p className="mt-3 max-w-3xl text-neutral-400">
+                Un ejemplo de cómo trabajar una imagen con intención visual, impacto, atmósfera y edición final.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-8">
+
+              {/* VIDEO VERTICAL */}
+              <div className="w-full max-w-[360px] overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
+                <div className="aspect-[9/16]">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.youtube.com/embed/lZvq0y0lq9s"
+                    title="Proyecto Máquina de Guerra - Eliaspro IA"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* IMAGEN RELACIONADA */}
+              <ImageCarousel
+                images={[
+                  {
+                    src: eliasMdg,
+                    alt: "Máquina de guerra generada con IA",
+                  },
+                  {
+                    src: eliasCt,
+                    alt: "Elias creador de contenido",
+                  },
+                ]}
+              />
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* SOLUCIÓN */}
       <section className="py-24 max-w-5xl mx-auto text-center">
 
@@ -269,115 +381,6 @@ export default function Home() {
 
       </section>
 
-      {/* EJEMPLOS REALES */}
-      <section className="py-24 max-w-6xl mx-auto">
-
-        <SectionTitle
-          eyebrow="Ejemplos reales"
-          title="De una idea simple a una pieza audiovisual"
-          description="Cada proyecto combina imágenes generadas con IA, criterio cinematográfico, edición, sonido y ritmo."
-        />
-
-        <div className="space-y-12">
-
-          {/* PROYECTO MARIO */}
-          <div className="rounded-3xl border border-neutral-800 bg-[#111]/80 p-5 md:p-8">
-
-            <div className="mb-6">
-              <span className="text-sm font-semibold text-[#38BDF8]">
-                Proyecto 01
-              </span>
-              <h3 className="mt-2 text-2xl font-bold">
-                Universo cinematográfico estilo Mario
-              </h3>
-              <p className="mt-3 max-w-3xl text-neutral-400">
-                Exploración visual con personajes, atmósfera y consistencia estética aplicada a un video de IA.
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center gap-8">
-
-              {/* VIDEO VERTICAL */}
-              <div className="w-full max-w-[360px] overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
-                <div className="aspect-[9/16]">
-                  <iframe
-                    className="h-full w-full"
-                    src="https://www.instagram.com/reel/DWuCSXGjtal/embed"
-                    title="Proyecto Mario - Eliaspro IA"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-
-              {/* IMÁGENES RELACIONADAS */}
-              <ImageCarousel
-                images={[
-                  {
-                    src: eliasCine,
-                    alt: "Imagen cinematográfica del proyecto Mario",
-                  },
-                  {
-                    src: eliasMario,
-                    alt: "Mario generado con estética cinematográfica",
-                  },
-                  {
-                    src: eliasYoshi,
-                    alt: "Yoshi generado con estética cinematográfica",
-                  },
-                ]}
-              />
-
-            </div>
-          </div>
-
-          {/* PROYECTO MÁQUINA DE GUERRA */}
-          <div className="rounded-3xl border border-neutral-800 bg-[#111]/80 p-5 md:p-8">
-
-            <div className="mb-6">
-              <span className="text-sm font-semibold text-[#38BDF8]">
-                Proyecto 02
-              </span>
-              <h3 className="mt-2 text-2xl font-bold">
-                Máquina de guerra: IA con look realista
-              </h3>
-              <p className="mt-3 max-w-3xl text-neutral-400">
-                Un ejemplo de cómo trabajar una imagen con intención visual, impacto, atmósfera y edición final.
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center gap-8">
-
-              {/* VIDEO VERTICAL */}
-              <div className="w-full max-w-[360px] overflow-hidden rounded-2xl border border-neutral-800 bg-black shadow-2xl shadow-sky-500/10">
-                <div className="aspect-[9/16]">
-                  <iframe
-                    className="h-full w-full"
-                    src="https://www.instagram.com/reel/DV4azvrDm-T/embed"
-                    title="Proyecto Máquina de Guerra - Eliaspro IA"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-
-              {/* IMAGEN RELACIONADA */}
-              <ImageCarousel
-                images={[
-                  {
-                    src: eliasMdg,
-                    alt: "Máquina de guerra generada con IA",
-                  },
-                  {
-                    src: eliasCt,
-                    alt: "Elias creador de contenido",
-                  },
-                ]}
-              />
-
-            </div>
-          </div>
-
-        </div>
-      </section>
 
       {/* MÓDULOS */}
       <FadeIn>
